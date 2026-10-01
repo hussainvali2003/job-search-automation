@@ -1,0 +1,52 @@
+user:
+  name: "Java Developer"
+  experience_years: 1.5
+  role_target: "Java Backend Developer"
+  target_titles:
+    - "Java Developer"
+    - "Software Engineer - Java"
+    - "Backend Engineer"
+    - "Java Backend Developer"
+    - "Software Development Engineer - I"
+    - "SDE 1"
+    - "Junior Java Developer"
+  skills_primary:
+    - "Java"
+    - "Spring Boot"
+    - "Microservices"
+    - "REST API"
+  skills_secondary:
+    - "Kafka"
+    - "Redis"
+    - "Docker"
+    - "AWS"
+    - "PostgreSQL"
+    - "MySQL"
+    - "React"
+  locations_preferred:
+    - "Bengaluru"
+    - "Hyderabad"
+    - "Pune"
+    - "Mumbai"
+    - "Chennai"
+    - "Delhi NCR"
+    - "Noida"
+    - "Gurgaon"
+    - "Ahmedabad"
+    - "Remote"
+    - "India"
+  experience_range:
+    min: 0
+    max: 4
+  exclude_seniority:
+    - "Senior"
+    - "Lead"
+    - "Principal"
+    - "Architect"
+    - "Manager"
+    - "Director"
+    - "VP"
+    - "5+ years"
+    - "7+ years"
+    - "Intern"
+    - "Internship"

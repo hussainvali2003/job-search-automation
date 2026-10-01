@@ -1,0 +1,21 @@
+default_timeouts:
+  connect_seconds: 5.0
+  read_seconds: 15.0
+
+rate_limits:
+  requests_per_minute: 30
+  concurrent_requests: 5
+
+tiers:
+  P0:
+    interval_minutes: 15
+    max_sources_per_run: 300
+  P1:
+    interval_minutes: 60
+    max_sources_per_run: 1000
+  P2:
+    interval_minutes: 360
+    max_sources_per_run: 2000
+  P3:
+    interval_minutes: 10080
+    max_sources_per_run: 5000

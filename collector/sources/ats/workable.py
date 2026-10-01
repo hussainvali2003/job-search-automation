@@ -1,0 +1,187 @@
+import time
+import httpx
+from datetime import datetime, timezone
+from typing import Optional
+
+from collector.core.models import Job, Source, parse_iso
+from collector.sources.base import JobSource, FetchResult
+from collector.core.normalization import clean_html, extract_skills, compute_content_hash
+from collector.core.freshness import calculate_freshness_class
+from collector.core.provenance import generate_job_id, build_canonical_url
+
+WORKABLE_V2_BASE = "https://apply.workable.com/api/v2/accounts"
+
+class WorkableSource(JobSource):
+    """
+    Direct collector for public Workable job boards via REST API.
+    API Endpoint: POST https://apply.workable.com/api/v2/accounts/{board_token}/jobs
+    """
+
+    def __init__(self, source_info: Source, client: Optional[httpx.AsyncClient] = None):
+        super().__init__(source_info)
+        self._client = client
+
+    def source_name(self) -> str:
+        return self.source_info.source_id or f"workable_{self.source_info.board_token}"
+
+    def source_type(self) -> str:
+        return "ATS_DIRECT"
+
+    def ats_platform(self) -> str:
+        return "workable"
+
+    def supports_timestamp(self) -> bool:
+        return True
+
+    def freshness_confidence_level(self) -> str:
+        return "HIGH"
+
+    async def fetch_jobs(self) -> FetchResult:
+        board_token = self.source_info.board_token
+        url = f"{WORKABLE_V2_BASE}/{board_token}/jobs"
+        start_time = time.monotonic()
+
+        headers = {
+            "User-Agent": "JobRadarCollector/1.0 (+https://github.com/job-radar)",
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        }
+
+        should_close = False
+        client = self._client
+        if client is None:
+            client = httpx.AsyncClient(timeout=15.0, follow_redirects=True)
+            should_close = True
+
+        try:
+            resp = await client.post(url, json={}, headers=headers)
+            duration_ms = (time.monotonic() - start_time) * 1000.0
+
+            if resp.status_code != 200:
+                # Try fallback GET v1 widget API if POST v2 failed
+                v1_url = f"https://apply.workable.com/api/v1/widget/accounts/{board_token}"
+                resp_v1 = await client.get(v1_url, headers=headers)
+                if resp_v1.status_code == 200:
+                    data = resp_v1.json()
+                    raw_jobs = data.get("jobs", [])
+                    parsed_jobs = [self.parse_workable_job_v1(j) for j in raw_jobs if self.parse_workable_job_v1(j)]
+                    return FetchResult(jobs=parsed_jobs, total_raw=len(raw_jobs), duration_ms=duration_ms, status_code=200)
+
+                return FetchResult(
+                    jobs=[],
+                    total_raw=0,
+                    duration_ms=duration_ms,
+                    error_message=f"HTTP {resp.status_code}: {resp.reason_phrase}",
+                    status_code=resp.status_code
+                )
+
+            try:
+                data = resp.json()
+            except Exception as e:
+                return FetchResult(
+                    jobs=[],
+                    total_raw=0,
+                    duration_ms=duration_ms,
+                    error_message=f"Malformed JSON response: {e}",
+                    status_code=200
+                )
+
+            raw_jobs = data.get("results", []) if isinstance(data, dict) else []
+            parsed_jobs = []
+            for raw_job in raw_jobs:
+                job_obj = self.parse_workable_job_v2(raw_job)
+                if job_obj:
+                    parsed_jobs.append(job_obj)
+
+            return FetchResult(
+                jobs=parsed_jobs,
+                total_raw=len(raw_jobs),
+                duration_ms=duration_ms,
+                error_message=None,
+                status_code=200
+            )
+
+        except httpx.TimeoutException:
+            duration_ms = (time.monotonic() - start_time) * 1000.0
+            return FetchResult(jobs=[], total_raw=0, duration_ms=duration_ms, error_message="HTTP Request Timeout", status_code=408)
+        except Exception as e:
+            duration_ms = (time.monotonic() - start_time) * 1000.0
+            return FetchResult(jobs=[], total_raw=0, duration_ms=duration_ms, error_message=f"Network Error: {e}", status_code=500)
+        finally:
+            if should_close:
+                await client.aclose()
+
+    def parse_workable_job_v2(self, raw_job: dict) -> Optional[Job]:
+        raw_id = str(raw_job.get("shortcode", "") or raw_job.get("id", ""))
+        if not raw_id:
+            return None
+
+        title = raw_job.get("title", "").strip()
+        if not title:
+            return None
+
+        job_id = generate_job_id(self.source_name(), raw_id)
+        posted_at = parse_iso(raw_job.get("published") or raw_job.get("created_at"))
+        confidence = "HIGH" if posted_at is not None else "MEDIUM"
+        freshness_cls = calculate_freshness_class(posted_at, None)
+
+        shortcode = raw_job.get("shortcode", "")
+        source_url = f"https://apply.workable.com/{self.source_info.board_token}/j/{shortcode}/" if shortcode else ""
+        canonical_url = build_canonical_url(source_url)
+
+        loc_dict = raw_job.get("location", {})
+        location_parts = []
+        if isinstance(loc_dict, dict):
+            if loc_dict.get("city"): location_parts.append(loc_dict["city"])
+            if loc_dict.get("country"): location_parts.append(loc_dict["country"])
+        location = ", ".join(location_parts) if location_parts else None
+
+        remote = raw_job.get("telecommute", False) or raw_job.get("workplace", "") == "remote"
+        employment_type = raw_job.get("employment_type")
+
+        description = clean_html(raw_job.get("description", ""))
+        snippet = description[:500] if description else None
+        skills = extract_skills(f"{title} {description}")
+
+        company = self.source_info.company_name or "Unknown Company"
+        content_hash = compute_content_hash(company, title, description)
+
+        now = datetime.now(timezone.utc)
+        return Job(
+            id=job_id, source=self.source_name(), source_type="ATS_DIRECT", source_job_id=raw_id,
+            source_url=source_url, fetched_at=now, posted_at=posted_at, updated_at=None,
+            first_seen_at=now, last_seen_at=now, last_verified_at=now, freshness_confidence=confidence,
+            company=company, title=title, employment_type=employment_type, location=location, remote=remote,
+            description=description, description_snippet=snippet, skills=skills, canonical_url=canonical_url,
+            content_hash=content_hash, freshness_class=freshness_cls, status="ACTIVE", is_new=True
+        )
+
+    def parse_workable_job_v1(self, raw_job: dict) -> Optional[Job]:
+        raw_id = str(raw_job.get("shortcode", "") or raw_job.get("code", ""))
+        if not raw_id: return None
+        title = raw_job.get("title", "").strip()
+        if not title: return None
+
+        job_id = generate_job_id(self.source_name(), raw_id)
+        posted_at = parse_iso(raw_job.get("published"))
+        confidence = "HIGH" if posted_at else "MEDIUM"
+        freshness_cls = calculate_freshness_class(posted_at, None)
+
+        source_url = raw_job.get("url", "")
+        canonical_url = build_canonical_url(source_url)
+        location = ", ".join(filter(None, [raw_job.get("city"), raw_job.get("country")])) or None
+
+        company = self.source_info.company_name or "Unknown Company"
+        now = datetime.now(timezone.utc)
+        return Job(
+            id=job_id, source=self.source_name(), source_type="ATS_DIRECT", source_job_id=raw_id,
+            source_url=source_url, fetched_at=now, posted_at=posted_at, updated_at=None,
+            first_seen_at=now, last_seen_at=now, last_verified_at=now, freshness_confidence=confidence,
+            company=company, title=title, location=location, canonical_url=canonical_url,
+            content_hash=compute_content_hash(company, title, ""), freshness_class=freshness_cls,
+            status="ACTIVE", is_new=True
+        )
+
+    async def health_check(self) -> bool:
+        res = await self.fetch_jobs()
+        return res.is_success

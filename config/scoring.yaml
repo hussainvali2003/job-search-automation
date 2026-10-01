@@ -1,0 +1,19 @@
+weights:
+  title_match: 0.35
+  skill_match: 0.25
+  location_match: 0.20
+  freshness: 0.15
+  source_reliability: 0.05
+
+freshness_decay:
+  under_6h: 1.0
+  under_12h: 0.9
+  under_24h: 0.8
+  under_3d: 0.6
+  under_7d: 0.4
+  over_7d: 0.2
+
+source_tiers:
+  p0_min_score: 75.0
+  p1_min_score: 40.0
+  p2_min_score: 15.0

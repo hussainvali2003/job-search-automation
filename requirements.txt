@@ -1,0 +1,10 @@
+# Cloud Collector Dependencies (NO AI / NO Heavy ML)
+pyyaml>=6.0
+python-dateutil>=2.9
+rich>=13.0
+httpx>=0.27
+aiohttp>=3.9
+beautifulsoup4>=4.12
+lxml>=5.0
+feedparser>=6.0
+tenacity>=8.2

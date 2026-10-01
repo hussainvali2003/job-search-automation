@@ -1,0 +1,339 @@
+{
+  "total": 11,
+  "results": [
+    {
+      "id": 6140066,
+      "shortcode": "ACD32AC5E1",
+      "title": "Operations Driver Success Specialist - Skroutz Last Mile (ODSS 1026)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Metamorfosi",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Metamorfosi",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "1026",
+      "published": "2026-09-23T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "Last Mile"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 6131311,
+      "shortcode": "C0CCE340BE",
+      "title": "Cargo Specialist - Skroutz Last Mile (CS0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Mandra",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Mandra",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "CS0926",
+      "published": "2026-09-22T00:00:00.000Z",
+      "language": "en",
+      "department": [
+        "Last Mile"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 6103783,
+      "shortcode": "B4A0F1A2AB",
+      "title": "Customer Care Agent - Skroutz Last Mile (CCA 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Athens",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Athens",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "CCA 0426",
+      "published": "2026-09-16T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "Last Mile"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 6092390,
+      "shortcode": "8640DC52CA",
+      "title": "Senior CRM & Automation Specialist (SCAS 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Athens",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Athens",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "SCAS 0926",
+      "published": "2026-09-11T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "CRM Marketing"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "hybrid"
+    },
+    {
+      "id": 4901107,
+      "shortcode": "12CC21E6A1",
+      "title": "Warehouse Staff - Aspropyrgos (WSA 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Aspropyrgos",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Aspropyrgos",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "WSA 0926",
+      "published": "2026-09-09T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "FBS"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 5793708,
+      "shortcode": "2BFA843F32",
+      "title": "Warehouse Staff Night Shift - Aspropyrgos (WSNSA 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Aspropyrgos",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Aspropyrgos",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "WSNSA 0926",
+      "published": "2026-09-09T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "FBS"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 6083243,
+      "shortcode": "BABD9194CF",
+      "title": "Warehouse Team Lead - Aspropyrgos (WTL 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Aspropyrgos",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Aspropyrgos",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "WTL 0926",
+      "published": "2026-09-07T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "FBS"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    },
+    {
+      "id": 5565166,
+      "shortcode": "FE9124C7E5",
+      "title": "International Partners Success Manager (IPSM 0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Athens",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Athens",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "IPSM 0926",
+      "published": "2026-09-03T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "Partners"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "hybrid"
+    },
+    {
+      "id": 6067600,
+      "shortcode": "DB1A13AC0A",
+      "title": "Business Analyst-Skroutz Last Mile(BA0926)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Athens",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Athens",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "BA 0926",
+      "published": "2026-08-31T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "Last Mile"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site",
+      "salary_from": 28000,
+      "salary_to": 32200,
+      "salary_currency_iso_code": "EUR",
+      "salary_frequency": "year"
+    },
+    {
+      "id": 5762398,
+      "shortcode": "E369AAF6FF",
+      "title": "Warehouse Admin (Returns) - Aspropyrgos (WA 0826)",
+      "remote": false,
+      "location": {
+        "country": "Greece",
+        "countryCode": "GR",
+        "city": "Aspropyrgos",
+        "region": "Attica"
+      },
+      "locations": [
+        {
+          "country": "Greece",
+          "countryCode": "GR",
+          "city": "Aspropyrgos",
+          "region": "Attica",
+          "hidden": false
+        }
+      ],
+      "state": "published",
+      "isInternal": false,
+      "code": "WA 0826",
+      "published": "2026-08-10T00:00:00.000Z",
+      "type": "full",
+      "language": "en",
+      "department": [
+        "FBS"
+      ],
+      "accountUid": "80c18561-920b-46e3-bfcd-23738a7556d1",
+      "approvalStatus": "approved",
+      "workplace": "on_site"
+    }
+  ],
+  "nextPage": "WzE3ODYzMjAwMDAwMDAsNTc2MjM5OF0="
+}

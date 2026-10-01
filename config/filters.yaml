@@ -1,0 +1,12 @@
+min_relevance_score: 0.40
+max_job_age_days: 30
+require_java_keyword: true
+blocked_companies: []
+blocked_titles:
+  - "Senior Developer"
+  - "Lead Developer"
+  - "Principal Engineer"
+  - "Tech Lead"
+  - "Architect"
+  - "Engineering Manager"
+  - "Director of Engineering"

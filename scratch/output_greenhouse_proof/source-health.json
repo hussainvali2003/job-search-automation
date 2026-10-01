@@ -1,0 +1,20 @@
+[
+  {
+    "source_id": "greenhouse_elastic",
+    "company_name": "Elastic",
+    "ats_platform": "greenhouse",
+    "tier": "P0",
+    "source_value_score": 100.0,
+    "health_status": "OK",
+    "last_success_at": "2026-10-01T12:28:36.718580+00:00"
+  },
+  {
+    "source_id": "greenhouse_invalid_9999",
+    "company_name": "NonexistentCorp",
+    "ats_platform": "greenhouse",
+    "tier": "P3",
+    "source_value_score": 0.0,
+    "health_status": "OK",
+    "last_success_at": null
+  }
+]

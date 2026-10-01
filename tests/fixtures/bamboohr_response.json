@@ -1,0 +1,28 @@
+{
+  "result": [
+    {
+      "id": "bamboo-101",
+      "jobTitle": "Java Microservices Backend Lead",
+      "department": "Engineering",
+      "location": {
+        "city": "Bengaluru",
+        "state": "Karnataka"
+      },
+      "employmentType": "Full-Time",
+      "datePosted": "2026-09-25",
+      "jobUrl": "https://company.bamboohr.com/careers/101"
+    },
+    {
+      "id": "bamboo-102",
+      "jobTitle": "Senior Spring Boot Engineer",
+      "department": "Engineering",
+      "location": {
+        "city": "Hyderabad",
+        "state": "Telangana"
+      },
+      "employmentType": "Full-Time",
+      "datePosted": "2026-09-28",
+      "jobUrl": "https://company.bamboohr.com/careers/102"
+    }
+  ]
+}

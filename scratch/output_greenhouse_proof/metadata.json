@@ -1,0 +1,17 @@
+{
+  "last_updated_at": "2026-10-01T12:28:39.063032+00:00",
+  "last_run": {
+    "run_id": "0384c774-f5b1-463f-92bd-fe2b7280405e",
+    "started_at": "2026-10-01T12:28:33.025840+00:00",
+    "finished_at": "2026-10-01T12:28:39.020590+00:00",
+    "duration_seconds": 5.99,
+    "tier_run": "P0",
+    "sources_polled": 2,
+    "sources_successful": 1,
+    "sources_failed": 1,
+    "jobs_fetched": 394,
+    "jobs_new": 394,
+    "jobs_duplicates": 0,
+    "status": "COMPLETED"
+  }
+}
