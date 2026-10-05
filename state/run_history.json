@@ -880,5 +880,19 @@
     "jobs_new": 1,
     "jobs_duplicates": 317,
     "status": "COMPLETED"
+  },
+  {
+    "run_id": "2ccb0526-dc89-47dd-8157-154cbb73d416",
+    "started_at": "2026-10-05T23:47:52.894313+00:00",
+    "finished_at": "2026-10-05T23:48:35.012819+00:00",
+    "duration_seconds": 42.12,
+    "tier_run": "P0",
+    "sources_polled": 10,
+    "sources_successful": 10,
+    "sources_failed": 0,
+    "jobs_fetched": 2295,
+    "jobs_new": 27,
+    "jobs_duplicates": 2268,
+    "status": "COMPLETED"
   }
 ]
