@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-03T07:56:43.854888+00:00",
+  "generated_at": "2026-11-03T10:09:00.530674+00:00",
   "sources": [
     {
       "source_id": "greenhouse_elastic",
@@ -25,7 +25,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:16.376110+00:00",
       "last_success_at": "2026-11-03T07:56:16.376110+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850719+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526557+00:00"
     },
     {
       "source_id": "greenhouse_airbnb",
@@ -50,7 +50,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:18.928859+00:00",
       "last_success_at": "2026-11-03T07:56:18.928859+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850726+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526563+00:00"
     },
     {
       "source_id": "greenhouse_stripe",
@@ -75,7 +75,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:27.542852+00:00",
       "last_success_at": "2026-11-03T07:56:27.542852+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850729+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526566+00:00"
     },
     {
       "source_id": "greenhouse_datadog",
@@ -100,7 +100,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:32.223950+00:00",
       "last_success_at": "2026-11-03T07:56:32.223950+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850732+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526567+00:00"
     },
     {
       "source_id": "greenhouse_phonepe",
@@ -125,7 +125,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.133700+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850734+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526570+00:00"
     },
     {
       "source_id": "greenhouse_razorpay",
@@ -150,7 +150,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.316329+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850736+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526572+00:00"
     },
     {
       "source_id": "greenhouse_groww",
@@ -164,18 +164,18 @@
       "source_value_score": 63.52,
       "relevant_jobs_30d": 1,
       "fresh_jobs_30d": 39,
-      "total_jobs_fetched_30d": 1532,
+      "total_jobs_fetched_30d": 1541,
       "duplicate_jobs_30d": 0,
-      "total_requests_30d": 166,
-      "successful_requests_30d": 165,
+      "total_requests_30d": 167,
+      "successful_requests_30d": 166,
       "failed_requests_30d": 1,
       "consecutive_failures": 0,
-      "avg_response_time_ms": 212.69,
+      "avg_response_time_ms": 200.63,
       "health_status": "OK",
       "registry_source": "seed",
-      "last_fetched_at": "2026-11-03T02:41:14.892626+00:00",
-      "last_success_at": "2026-11-03T02:41:14.892626+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850739+00:00"
+      "last_fetched_at": "2026-11-03T10:09:00.125351+00:00",
+      "last_success_at": "2026-11-03T10:09:00.125351+00:00",
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526574+00:00"
     },
     {
       "source_id": "greenhouse_meesho",
@@ -200,7 +200,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.433910+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850741+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526575+00:00"
     },
     {
       "source_id": "greenhouse_freshworks",
@@ -225,7 +225,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.549701+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850743+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526576+00:00"
     },
     {
       "source_id": "greenhouse_chargebee",
@@ -250,7 +250,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.715778+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850744+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526577+00:00"
     },
     {
       "source_id": "lever_palantir",
@@ -275,7 +275,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:38.972669+00:00",
       "last_success_at": "2026-11-03T07:56:38.972669+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850746+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526579+00:00"
     },
     {
       "source_id": "lever_cloudflare",
@@ -300,7 +300,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:47.977950+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850748+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526580+00:00"
     },
     {
       "source_id": "lever_figma",
@@ -325,7 +325,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:48.221796+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850749+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526581+00:00"
     },
     {
       "source_id": "lever_atlassian",
@@ -350,7 +350,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:48.437872+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850751+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526582+00:00"
     },
     {
       "source_id": "lever_coinbase",
@@ -375,7 +375,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:48.647008+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850752+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526583+00:00"
     },
     {
       "source_id": "ashby_linear",
@@ -389,18 +389,18 @@
       "source_value_score": 60.0,
       "relevant_jobs_30d": 0,
       "fresh_jobs_30d": 109,
-      "total_jobs_fetched_30d": 5182,
+      "total_jobs_fetched_30d": 5213,
       "duplicate_jobs_30d": 0,
-      "total_requests_30d": 167,
-      "successful_requests_30d": 167,
+      "total_requests_30d": 168,
+      "successful_requests_30d": 168,
       "failed_requests_30d": 0,
       "consecutive_failures": 0,
-      "avg_response_time_ms": 100.11,
+      "avg_response_time_ms": 93.29,
       "health_status": "OK",
       "registry_source": "seed",
-      "last_fetched_at": "2026-11-03T02:41:15.225127+00:00",
-      "last_success_at": "2026-11-03T02:41:15.225127+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850753+00:00"
+      "last_fetched_at": "2026-11-03T10:09:00.369254+00:00",
+      "last_success_at": "2026-11-03T10:09:00.369254+00:00",
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526585+00:00"
     },
     {
       "source_id": "ashby_ramp",
@@ -425,7 +425,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:40.366780+00:00",
       "last_success_at": "2026-11-03T07:56:40.366780+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850754+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526586+00:00"
     },
     {
       "source_id": "ashby_sentry",
@@ -450,7 +450,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:40.670631+00:00",
       "last_success_at": "2026-11-03T07:56:40.670631+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850756+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526587+00:00"
     },
     {
       "source_id": "smartrecruiters_bosch",
@@ -475,7 +475,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:41.300000+00:00",
       "last_success_at": "2026-11-03T07:56:41.300000+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850757+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526588+00:00"
     },
     {
       "source_id": "recruitee_bunq",
@@ -500,7 +500,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T00:42:28.602880+00:00",
       "last_success_at": "2026-11-03T00:42:28.602880+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850759+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526590+00:00"
     },
     {
       "source_id": "workable_skroutz",
@@ -514,18 +514,18 @@
       "source_value_score": 60.0,
       "relevant_jobs_30d": 0,
       "fresh_jobs_30d": 39,
-      "total_jobs_fetched_30d": 1372,
+      "total_jobs_fetched_30d": 1381,
       "duplicate_jobs_30d": 0,
-      "total_requests_30d": 155,
-      "successful_requests_30d": 155,
+      "total_requests_30d": 156,
+      "successful_requests_30d": 156,
       "failed_requests_30d": 0,
       "consecutive_failures": 0,
-      "avg_response_time_ms": 228.21,
+      "avg_response_time_ms": 213.41,
       "health_status": "OK",
       "registry_source": "seed",
-      "last_fetched_at": "2026-11-03T02:41:15.481866+00:00",
-      "last_success_at": "2026-11-03T02:41:15.481866+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850761+00:00"
+      "last_fetched_at": "2026-11-03T10:09:00.526519+00:00",
+      "last_success_at": "2026-11-03T10:09:00.526519+00:00",
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526591+00:00"
     },
     {
       "source_id": "greenhouse_postman",
@@ -550,7 +550,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:48.836044+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850762+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526592+00:00"
     },
     {
       "source_id": "greenhouse_browserstack",
@@ -575,7 +575,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:48.951155+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850763+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526593+00:00"
     },
     {
       "source_id": "greenhouse_hasura",
@@ -600,7 +600,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:49.064095+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850764+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526594+00:00"
     },
     {
       "source_id": "greenhouse_rubrik",
@@ -625,7 +625,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:42.981446+00:00",
       "last_success_at": "2026-11-03T07:56:42.981446+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850765+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526595+00:00"
     },
     {
       "source_id": "greenhouse_couchbase",
@@ -650,7 +650,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:49.207815+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850766+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526596+00:00"
     },
     {
       "source_id": "greenhouse_confluent",
@@ -675,7 +675,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:49.324489+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850768+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526597+00:00"
     },
     {
       "source_id": "lever_deliveroo",
@@ -700,7 +700,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:50.668334+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850769+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526598+00:00"
     },
     {
       "source_id": "lever_cleartax",
@@ -725,7 +725,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:50.856679+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850770+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526599+00:00"
     },
     {
       "source_id": "lever_slice",
@@ -750,7 +750,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:51.049589+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850771+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526600+00:00"
     },
     {
       "source_id": "ashby_replit",
@@ -775,7 +775,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:43.235696+00:00",
       "last_success_at": "2026-11-03T07:56:43.235696+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850772+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526602+00:00"
     },
     {
       "source_id": "ashby_vanta",
@@ -800,7 +800,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T07:56:43.850656+00:00",
       "last_success_at": "2026-11-03T07:56:43.850656+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850773+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526603+00:00"
     },
     {
       "source_id": "greenhouse_infosys",
@@ -825,7 +825,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:51.175811+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850774+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526604+00:00"
     },
     {
       "source_id": "bamboohr_company",
@@ -850,7 +850,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T00:42:29.105240+00:00",
       "last_success_at": "2026-11-03T00:42:29.105240+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850775+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526605+00:00"
     },
     {
       "source_id": "workable_inmobi",
@@ -875,7 +875,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T00:42:29.267665+00:00",
       "last_success_at": "2026-11-03T00:42:29.267665+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850776+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526606+00:00"
     },
     {
       "source_id": "smartrecruiters_visa",
@@ -900,7 +900,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-03T00:42:29.674240+00:00",
       "last_success_at": "2026-11-03T00:42:29.674240+00:00",
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850777+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526607+00:00"
     },
     {
       "source_id": "greenhouse_invalid_9999",
@@ -925,7 +925,7 @@
       "registry_source": "seed",
       "last_fetched_at": "2026-11-01T05:38:51.362030+00:00",
       "last_success_at": null,
-      "last_tier_evaluated_at": "2026-11-03T07:56:43.850778+00:00"
+      "last_tier_evaluated_at": "2026-11-03T10:09:00.526608+00:00"
     }
   ]
 }
