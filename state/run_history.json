@@ -1,19 +1,5 @@
 [
   {
-    "run_id": "5ce61af7-8a1c-45d2-a3d7-a3a6249f9b9f",
-    "started_at": "2026-11-10T21:28:54.601407+00:00",
-    "finished_at": "2026-11-10T21:28:55.414587+00:00",
-    "duration_seconds": 0.81,
-    "tier_run": "P1",
-    "sources_polled": 3,
-    "sources_successful": 3,
-    "sources_failed": 0,
-    "jobs_fetched": 50,
-    "jobs_new": 1,
-    "jobs_duplicates": 49,
-    "status": "COMPLETED"
-  },
-  {
     "run_id": "106d8e73-4502-4068-aca1-e1f60fe2c266",
     "started_at": "2026-11-10T22:57:01.183054+00:00",
     "finished_at": "2026-11-10T22:57:02.329227+00:00",
@@ -1397,6 +1383,20 @@
     "jobs_fetched": 2662,
     "jobs_new": 32,
     "jobs_duplicates": 2630,
+    "status": "COMPLETED"
+  },
+  {
+    "run_id": "c18e3e8e-9239-49ad-a0fd-72e9411eb3fe",
+    "started_at": "2026-11-19T23:56:05.283431+00:00",
+    "finished_at": "2026-11-19T23:56:05.942254+00:00",
+    "duration_seconds": 0.66,
+    "tier_run": "P1",
+    "sources_polled": 3,
+    "sources_successful": 3,
+    "sources_failed": 0,
+    "jobs_fetched": 49,
+    "jobs_new": 0,
+    "jobs_duplicates": 49,
     "status": "COMPLETED"
   }
 ]
